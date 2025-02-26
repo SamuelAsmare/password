@@ -1,0 +1,160 @@
+.app{
+  font-family:'Times New Roman', Times, serif;
+  height: auto;
+  width: 100%;
+  padding-top:50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+@media(max-width:1024px){
+  .app{
+    padding-top:0px;
+  }
+  .container{
+    gap:0px;
+  }
+}
+.container{
+  padding-top:50px;
+  margin:auto;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+  color:white;
+  border:none;
+  background-color:rgb(9, 9, 9);
+  border-radius: 20px;
+  box-shadow:2px 0px 10px rgba(0, 0, 0, 0.3);
+}
+@media(max-width:1024px){
+  .app{
+    padding-top:0px;
+  }
+  .container{
+     gap:20px;
+    
+  }
+}
+.imagediv{
+  padding:0px;
+  height:auto;
+  width: 100%;
+  border:None;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image{
+  width:200px;
+  height:200px;
+  height: auto;
+  border-radius:10%;
+  animation:starting 1s ease;
+}
+@keyframes starting{
+  from{
+    transform:translateX(50px);
+  }
+  to{
+    transform:translateX(0px);
+  }
+}
+
+.result{
+  border:none;
+   border-bottom:5px solid rgb(4, 251, 29)  ;
+  width: 80%;
+  padding:40px;
+  display :flex;
+  justify-content:space-between;
+  height: auto;
+  
+}   
+.resultbox{
+  padding:0px;
+  width:320px;
+  height:40px;
+  border: none;
+  box-shadow:black 1px 1px 10px 1px;
+  border-radius: 10px;
+  animation:starting 1s ease;
+}
+#copy{
+  font-size:15px;
+  cursor:pointer;
+  width: 80px;
+  height: 30px;
+  padding:0px;
+  margin:0px;
+  background-color:#00ff1a;
+  border-radius:10px;
+  border: none;
+ 
+  animation:cop 1s infinite alternate;
+}
+@keyframes cop{
+  from{
+    transform:translateY(5px);
+  }
+  to{
+    transform:translateY(0px);
+  }
+}
+.choices{
+  max-width: 100%;
+  border:none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+animation:starting 1s ease;
+}
+.choiceslist{
+  margin:10px;
+  width:40%;
+  border:none;
+    animation:starting 2s ease;
+  font-size:17px;
+}
+.generate{
+  width: 30%;
+  height: 40px;
+  padding:10px;
+  border: none;
+  background-color:#00ff1a;
+  color:black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-top:0px;
+  animation:generateanimation 10s infinite alternate;
+}
+@keyframes generateanimation{
+     0%{
+      background-color:red;
+     }
+     20%{
+      background-color:#f1f1e9;
+     }
+     40%{
+      background-color:yellow;
+     }
+     60%{
+      background-color:rgb(0, 238, 255);
+     }
+     80%{
+      background-color:rgb(184, 116, 237);
+     }
+     100%{
+      background-color:rgb(68, 243, 19);
+     }
+
+}

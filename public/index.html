@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  var path = window.location.pathname.split('/').pop();
+  if (path && !path.includes('.')) {
+    window.location.href = window.location.origin + "/<your-repo-name>/" + path;
+  }
+</script>
+
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/image.png" />

@@ -56,10 +56,10 @@ const copy=()=>{
 }
   return (
     <div className="app">
-       <div className="container col-11 col-md-10 col-lg-5 mt-sm-2">
+       <div className="container col-11 col-md-10 col-lg-5 mt-0 mt-sm-2 ">
             {/* Image     */}
                     <div className="imagediv mb-0 mt-0">
-                      <h2 class="col-11 text-center p-0 m-0">Strong Password Generators</h2>
+                      <h2 class="col-11 text-center p-0 m-0">Strong~Password~Generator</h2>
                      <img src="/hacker.jpg" className="image m-0" alt="little hacker guy"/>
 
                     </div>
